@@ -92,6 +92,7 @@ button.addEventListener("click", function () {
     function writePassword() {
         const lengthOfPassword = parseInt(prompt("Enter the number between 8 and 128"));
         if (lengthOfPassword < 8 || lengthOfPassword > 128) {
+          prompt("You enter not valid number. Try again.")
             return writePassword();
         }
         return lengthOfPassword;
